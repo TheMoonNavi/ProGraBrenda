@@ -1,7 +1,131 @@
 <!DOCTYPE html>
-<html>
-    <head>DOCUMENT</head>
-    <body>
-        <h1>Hello World</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        img {
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+        }
+
+        video {
+            width: 60%;
+            height: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h1><center>El arte y la anatomia</center></h1>
+        <hr>
+    </div>
+    <div id="indice">
+        <ul>
+            <li><a href="#intro">Introducción</a></li>
+            <li><a href="#actua">Actualidad</a></li>
+            <li><a href="#ejemplos">Ejemplos</a></li>
+        </ul>
+    </div>
+    <div id="intro">
+        <h2>Introducción</h2>
+        <p>La historia de la actualidad de <b>La Anatomia en el arte, </b>la Anatomía Artística, por su parte, es un área que pretende estudiar y analizar las estructuras del cuerpo que son responsables del aspecto y la forma de la figura humana. Estas formas se deben sobre todo a las estructuras óseas y musculares </p>
+        <p>Aqui un video ilustrativo:</p>
+        <video controls>
+            <source src="https://www.youtube.com/watch?v=NfwuAZ6ycOs" type="video/mp4" />
+        </video>
+   
+        <hr>
+       
+    </div>
+    <div id="actua">
+        <br>
+        <h2>Actualidad</h2>
+        <p>En la ultima decada se a visto a una creciente comunidad de artistas crecer en distintos medios, ya sea en el ambito social, vease Facebook, instagram, Twitter, o en el ambito  profecional, el cual puede ser publicidad para empresas, artes conceptuales a la hora de desarrollar ideas en la mayoria de medios narrativos visuales, con esto se a visto un aumento notorio de la oferta de trabajo y el crecimiento de la cantidad de artistas en la industria, los cuales al ser necesario el conocimiento anatomico para buena proporcion de la cantidad de trabajp que hay, se han visto embueltos en el estudio de la anatomia fisica, de la perspectiva, y del control de calidad de la industria.</p>
+        <img src="https://cdna.artstation.com/p/assets/images/images/026/438/204/large/anatomy-for-sculptors-finger-bending-and-connecting-lines.jpg?1588781275">
+        <p>Documento referencial</p>
+        <iframe
+            id="iframe"  
+            title="Documento de arte"
+            width="600"
+            height="400"
+            src="https://educanew.com/wp-content/uploads/2020/09/5.-El-arte-como-documento-historico.pdf">
+        </iframe>
+        <blockquote>""</blockquote>
+        <hr>
+    </div>
+    <div id="ejemplos">
+        <h2>Ejemplos actuales</h2>
+        <p> En distntas escuelas de arte podemos encontrar que hay cursos enteros dedicados al estudio del realismo y la anatomia con el fin de poder subir la calidad de las obras, Algunos lugares son las escuelas de bellas artes que hay en:</p>
+        <ol>
+            <li>Argentina</li>
+            <li>Chile</li>
+            <li>Japon</li>
+            <li>Etc...</li>
+        </ol>
+        <table>
+            <colgroup span="4" class="columns"></colgroup>
+            <caption>
+              Escuelar de arte
+            </caption>
+            <tr>
+                <td>Royal College of Art (RCA)</td>
+            </tr>
+            <tr>
+                <td>Escuela del Instituto de Arte de Chicago (SAIC)</td>
+            </tr>
+            <tr>
+                <td>Central Saint Martins (CSM)</td>
+            </tr>
+
+          </table>
+       
+    </div>
+    <hr>
+    <div>
+        <p>SI estas interesado en recibir mas informacion relacionada con este tema, puede dejarnos un comentario con respecto al tema hablado en esta pagina, nos seria de gran ayuda para tener en cuenta su opinion c:</p>
+    </div>
+    <laber for="name">Nombre de usuario</laber>
+    <input      
+            type="text"
+            id="nombre"
+            name="username"
+            placeholder="Favor de ingresar su nombre"
+            value=""
+            required
+    ><br><br>
+    <label for="messagge">Comentario</label>
+    <textarea
+        required
+        name="comentario"
+        rols="30"
+        cols="60"
+        placeholder="Ingresa tu comentario"></textarea>
+    <div></div>
+    <label for="Tipo">Enfoque del comentario</label>
+        <select name="Tipo" id="Tipo">
+            <option value="crit">Critica</option>
+            <option value="opinion">Opinion</option>
+            <option value="apor">Aportacion</option>
+            <option value="suge">Sugerencia</option>
+        </select>
+        <br><br>
+    <label for="pregunta">Te gusto la manera en que representamos ka informacion?</label>
+    <input minlength="5" maxlength="20" id="question" type="text" list="gusto">
+    <datalist id="gusto" name="gusto">
+        <option>Me Gusto Mucho</option>
+        <option>Neutral</option>
+        <option>No Me Gusto Nada</option>
+    </datalist><br><br>
+    <button type="submit">Enviar</button>
+</body>
 </html>
